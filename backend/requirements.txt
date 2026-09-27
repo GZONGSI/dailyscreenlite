@@ -1,0 +1,14 @@
+# DailyScreen Lite 后端运行时依赖（版本锁定）
+fastapi==0.138.0
+uvicorn==0.49.0
+python-multipart==0.0.20
+# 格式读取优先使用成熟库；只用标准 CSV 与 openpyxl 做只读解析
+openpyxl==3.1.5
+# AKShare（工单 06）：交易所名单与东方财富日线；随其传递安装 pandas 等
+akshare==1.18.94
+# BaoStock: direct proportional forward-adjusted daily bars (BSD)
+baostock==0.9.3
+pandas==3.0.5
+requests==2.34.2
+# Windows 上 zoneinfo 需要 tzdata 提供 IANA 时区数据（北京时间）
+tzdata==2026.2

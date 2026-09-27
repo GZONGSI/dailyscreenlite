@@ -1,0 +1,6 @@
+# 开发与测试依赖（在 requirements.txt 上追加）
+-r requirements.txt
+pytest==9.0.1
+httpx==0.28.1
+# 仅用于 backend/tools/build_securities_snapshot.py 从授权库只读抽取初始证券库
+duckdb==1.5.4
